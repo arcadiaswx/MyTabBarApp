@@ -10,6 +10,8 @@ import UIKit
 import Fabric
 import TwitterKit
 
+var tabBarViewController:TabBarViewController?
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFTwitterUtils.initializeWithConsumerKey("kZmUx1XhVHeEx6IdPuakobdTYxIT55HLJBcTuBlLyqs55xcwV1", consumerSecret:"BGbHetUaxrQeYVydJPLKLW3CGnQUx4BonbTppfniufPZW4n7Bx")
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions);
         
-        Fabric.with([Twitter.self])
+        //Fabric.with([Twitter.self])
         return true
     }
 

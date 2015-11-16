@@ -13,6 +13,7 @@
 		A6C4304E1BFA273D0047E5DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A6C4304D1BFA273D0047E5DB /* Podfile */; };
 		A6C430511BFA299E0047E5DB /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6C430501BFA299E0047E5DB /* Pacifico.ttf */; };
 		A6C430531BFA2A7B0047E5DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */; };
+		A6C430551BFA35920047E5DB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430541BFA35920047E5DB /* TabBarViewController.swift */; };
 		A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A51BF9739E00733741 /* AppDelegate.swift */; };
 		A6D9C5A81BF9739E00733741 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A71BF9739E00733741 /* MoreViewController.swift */; };
 		A6D9C5AA1BF9739E00733741 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A91BF9739E00733741 /* SecondViewController.swift */; };
@@ -49,9 +50,10 @@
 		A6C430491BFA25C80047E5DB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6C4304A1BFA25C80047E5DB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A6C4304D1BFA273D0047E5DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		A6C4304F1BFA29270047E5DB /* MyTabBarApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyTabBarApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6C4304F1BFA29270047E5DB /* MyTabBarApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MyTabBarApp-Bridging-Header.h"; path = "../MyTabBarApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		A6C430501BFA299E0047E5DB /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A6C430541BFA35920047E5DB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A6D9C5A21BF9739E00733741 /* MyTabBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTabBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D9C5A51BF9739E00733741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D9C5A71BF9739E00733741 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
@@ -132,13 +134,14 @@
 				A6C4304D1BFA273D0047E5DB /* Podfile */,
 				A6C430501BFA299E0047E5DB /* Pacifico.ttf */,
 				A6D9C5A51BF9739E00733741 /* AppDelegate.swift */,
+				A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */,
 				A6D9C5D71BF9768600733741 /* ListViewController.swift */,
 				A6D9C5A71BF9739E00733741 /* MoreViewController.swift */,
 				A6D9C5A91BF9739E00733741 /* SecondViewController.swift */,
 				A6D9C5D51BF9740600733741 /* ViewController.swift */,
 				A6C430491BFA25C80047E5DB /* LoginViewController.swift */,
 				A6C4304A1BFA25C80047E5DB /* SignUpViewController.swift */,
-				A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */,
+				A6C430541BFA35920047E5DB /* TabBarViewController.swift */,
 				A6D9C5AB1BF9739E00733741 /* Main.storyboard */,
 				A6D9C5AE1BF9739E00733741 /* Assets.xcassets */,
 				A6D9C5B01BF9739E00733741 /* LaunchScreen.storyboard */,
@@ -364,6 +367,7 @@
 				A6C430531BFA2A7B0047E5DB /* WelcomeViewController.swift in Sources */,
 				A6C4304C1BFA25C80047E5DB /* SignUpViewController.swift in Sources */,
 				A6D9C5AA1BF9739E00733741 /* SecondViewController.swift in Sources */,
+				A6C430551BFA35920047E5DB /* TabBarViewController.swift in Sources */,
 				A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */,
 				A6D9C5D61BF9740600733741 /* ViewController.swift in Sources */,
 				A6D9C5D81BF9768600733741 /* ListViewController.swift in Sources */,
@@ -513,6 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teklabsco.MyTabBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 			};
 			name = Debug;
@@ -527,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teklabsco.MyTabBarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 			};
 			name = Release;

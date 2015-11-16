@@ -22,7 +22,7 @@ class SignUpViewController : PFSignUpViewController {
         
         // remove the parse Logo
         let logo = UILabel()
-        logo.text = "Vay.K"
+        logo.text = "TabBarApp"
         logo.textColor = UIColor.whiteColor()
         logo.font = UIFont(name: "Pacifico", size: 70)
         logo.shadowColor = UIColor.lightGrayColor()
