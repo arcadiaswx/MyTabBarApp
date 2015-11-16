@@ -1,0 +1,63 @@
+PODS:
+  - Bolts (1.5.0):
+    - Bolts/AppLinks (= 1.5.0)
+    - Bolts/Tasks (= 1.5.0)
+  - Bolts/AppLinks (1.5.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.0)
+  - Fabric (1.6.0):
+    - Fabric/Base (= 1.6.0)
+  - Fabric/Base (1.6.0)
+  - FBSDKCoreKit (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.8.0)
+    - FBSDKCoreKit/no-arc (= 4.8.0)
+  - FBSDKCoreKit/arc (4.8.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.8.0):
+    - FBSDKCoreKit
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+  - ParseFacebookUtilsV4 (1.9.0):
+    - Bolts/Tasks (>= 1.3.0)
+    - FBSDKCoreKit (~> 4.7)
+    - FBSDKLoginKit (~> 4.7)
+    - Parse (~> 1.9)
+  - ParseTwitterUtils (1.9.0):
+    - Bolts/Tasks (>= 1.3.0)
+    - Parse (~> 1.9)
+  - ParseUI (1.1.6):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
+  - TwitterCore (1.13.1):
+    - Fabric
+  - TwitterKit (1.13.1):
+    - TwitterCore (= 1.13.1)
+
+DEPENDENCIES:
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - Parse
+  - ParseFacebookUtilsV4
+  - ParseTwitterUtils
+  - ParseUI
+  - TwitterCore
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Fabric: d737eda3a26ac940a5430230eedb35f16b226131
+  FBSDKCoreKit: 66a935d17b6e00b6b64e604f2eb9b72c9ab7deb8
+  FBSDKLoginKit: d893fcbb98d854496925e9ff73c67b896982d3c4
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+  ParseFacebookUtilsV4: aadebfaaaf4a45bf0a0992863bf48c8fc49189e3
+  ParseTwitterUtils: 0155d1a4e388690aa5d80405a586474e66606968
+  ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
+  TwitterCore: 4f6fbd413f6d574d38bfbeeeb5cd75738caf567e
+  TwitterKit: 77ee49981d79c9663eae3920641addf7c8713b38
+
+COCOAPODS: 0.39.0
