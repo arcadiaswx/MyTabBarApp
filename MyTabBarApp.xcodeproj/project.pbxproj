@@ -14,6 +14,13 @@
 		A6C430511BFA299E0047E5DB /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6C430501BFA299E0047E5DB /* Pacifico.ttf */; };
 		A6C430531BFA2A7B0047E5DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */; };
 		A6C430551BFA35920047E5DB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430541BFA35920047E5DB /* TabBarViewController.swift */; };
+		A6C430571BFA3E7E0047E5DB /* AppIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430561BFA3E7E0047E5DB /* AppIntroViewController.swift */; };
+		A6C430591BFB8E7D0047E5DB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430581BFB8E7D0047E5DB /* ItemCell.swift */; };
+		A6C4305B1BFB8ED50047E5DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305A1BFB8ED50047E5DB /* Item.swift */; };
+		A6C4305E1BFB9C520047E5DB /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */; };
+		A6C430601BFB9E5A0047E5DB /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */; };
+		A6C430621BFBA0890047E5DB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430611BFBA0890047E5DB /* ItemsViewController.swift */; };
+		A6C430641BFBA15B0047E5DB /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430631BFBA15B0047E5DB /* SampleData.swift */; };
 		A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A51BF9739E00733741 /* AppDelegate.swift */; };
 		A6D9C5A81BF9739E00733741 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A71BF9739E00733741 /* MoreViewController.swift */; };
 		A6D9C5AA1BF9739E00733741 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A91BF9739E00733741 /* SecondViewController.swift */; };
@@ -54,6 +61,13 @@
 		A6C430501BFA299E0047E5DB /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A6C430541BFA35920047E5DB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A6C430561BFA3E7E0047E5DB /* AppIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntroViewController.swift; sourceTree = "<group>"; };
+		A6C430581BFB8E7D0047E5DB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		A6C4305A1BFB8ED50047E5DB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		A6C430611BFBA0890047E5DB /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		A6C430631BFBA15B0047E5DB /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A6D9C5A21BF9739E00733741 /* MyTabBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTabBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D9C5A51BF9739E00733741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D9C5A71BF9739E00733741 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +120,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A6C4305C1BFB8EDA0047E5DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6C4305A1BFB8ED50047E5DB /* Item.swift */,
+				A6C430631BFBA15B0047E5DB /* SampleData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A6D9C5991BF9739E00733741 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +158,7 @@
 				A6C430501BFA299E0047E5DB /* Pacifico.ttf */,
 				A6D9C5A51BF9739E00733741 /* AppDelegate.swift */,
 				A6C430521BFA2A7B0047E5DB /* WelcomeViewController.swift */,
+				A6C430561BFA3E7E0047E5DB /* AppIntroViewController.swift */,
 				A6D9C5D71BF9768600733741 /* ListViewController.swift */,
 				A6D9C5A71BF9739E00733741 /* MoreViewController.swift */,
 				A6D9C5A91BF9739E00733741 /* SecondViewController.swift */,
@@ -142,11 +166,16 @@
 				A6C430491BFA25C80047E5DB /* LoginViewController.swift */,
 				A6C4304A1BFA25C80047E5DB /* SignUpViewController.swift */,
 				A6C430541BFA35920047E5DB /* TabBarViewController.swift */,
+				A6C430581BFB8E7D0047E5DB /* ItemCell.swift */,
+				A6C4305C1BFB8EDA0047E5DB /* Model */,
 				A6D9C5AB1BF9739E00733741 /* Main.storyboard */,
 				A6D9C5AE1BF9739E00733741 /* Assets.xcassets */,
 				A6D9C5B01BF9739E00733741 /* LaunchScreen.storyboard */,
 				A6D9C5B31BF9739E00733741 /* Info.plist */,
 				A6C4304F1BFA29270047E5DB /* MyTabBarApp-Bridging-Header.h */,
+				A6C430611BFBA0890047E5DB /* ItemsViewController.swift */,
+				A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */,
+				A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */,
 			);
 			path = MyTabBarApp;
 			sourceTree = "<group>";
@@ -366,11 +395,18 @@
 				A6C4304B1BFA25C80047E5DB /* LoginViewController.swift in Sources */,
 				A6C430531BFA2A7B0047E5DB /* WelcomeViewController.swift in Sources */,
 				A6C4304C1BFA25C80047E5DB /* SignUpViewController.swift in Sources */,
+				A6C430591BFB8E7D0047E5DB /* ItemCell.swift in Sources */,
+				A6C4305B1BFB8ED50047E5DB /* Item.swift in Sources */,
 				A6D9C5AA1BF9739E00733741 /* SecondViewController.swift in Sources */,
 				A6C430551BFA35920047E5DB /* TabBarViewController.swift in Sources */,
+				A6C430641BFBA15B0047E5DB /* SampleData.swift in Sources */,
 				A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */,
 				A6D9C5D61BF9740600733741 /* ViewController.swift in Sources */,
+				A6C4305E1BFB9C520047E5DB /* ItemDetailsViewController.swift in Sources */,
+				A6C430621BFBA0890047E5DB /* ItemsViewController.swift in Sources */,
+				A6C430571BFA3E7E0047E5DB /* AppIntroViewController.swift in Sources */,
 				A6D9C5D81BF9768600733741 /* ListViewController.swift in Sources */,
+				A6C430601BFB9E5A0047E5DB /* CategoryPickerViewController.swift in Sources */,
 				A6D9C5A81BF9739E00733741 /* MoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

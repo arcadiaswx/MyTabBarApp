@@ -10,9 +10,18 @@ import UIKit
 
 class WelcomeViewController: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
+    var segueStatusID = "foo"
+    //var showAppIntro: Bool?
+    var showAppIntro: Bool?
+    var user: PFObject?
+    var newUser: Bool?
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        if (PFUser.currentUser() == nil) {
+        print("Is showAppIntro set? ", showAppIntro)
+        user = PFUser.currentUser()
+        
+        if (user == nil) {
             let loginViewController = LoginViewController()
             loginViewController.delegate = self
             loginViewController.fields = [.UsernameAndPassword, .LogInButton, .PasswordForgotten, .SignUpButton, .Facebook, .Twitter]
@@ -22,14 +31,20 @@ class WelcomeViewController: UIViewController, PFLogInViewControllerDelegate, PF
             self.presentViewController(loginViewController, animated: false, completion: nil)
         } else {
             //presentLoggedInAlert()
-             self.performSegueWithIdentifier("showIntroViewController", sender: self)
+            if ((PFUser.currentUser()!.isNew.boolValue == true) || (showAppIntro!.boolValue == false)) {
+                print("Is this user new? ", PFUser.currentUser()!.isNew.boolValue)
+                self.performSegueWithIdentifier("showTabBarController", sender: self)
+            }
+            else if(showAppIntro!.boolValue == true) {
+                self.performSegueWithIdentifier("showIntroViewController", sender: self)
+            }
         }
     }
     
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
         self.dismissViewControllerAnimated(true, completion: nil)
         //presentLoggedInAlert()
-        self.performSegueWithIdentifier("showIntroViewController", sender: self)
+        self.performSegueWithIdentifier("showTabBarController", sender: self)
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
@@ -53,10 +68,10 @@ class WelcomeViewController: UIViewController, PFLogInViewControllerDelegate, PF
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //tabBarViewController?.tabBarDescriptionLabel.editable = true
         if segue.identifier == "showIntroViewController" {
-        print("Show Intro ")
+            print("Show Intro ")
         }
         else if segue.identifier == "showTabBarController" {
- 
+            print("Show Tab Bar ")
             let userObject = PFUser.currentUser()
             tabBarViewController?.currentUser = userObject
             //tabBarViewController?.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
