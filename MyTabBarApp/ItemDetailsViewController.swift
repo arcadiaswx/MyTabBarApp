@@ -12,15 +12,12 @@ class ItemDetailsViewController: UITableViewController, UIPickerViewDataSource, 
     
     var item:Item?
     let moodArray = [  "Health", "Job", "Wisdom", "Faith", "Family", "Natural Disaster"]
-    var category:String = "Peace" {
-        didSet {
-            categoryDetailsLabel.text? = category
-        }
-    }
+
     
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var categoryDetailsLabel: UILabel!
-    @IBOutlet weak var notesTextField: UITextField!
+    //@IBOutlet weak var titleTextField: UITextField!
+    //@IBOutlet weak var categoryPicker: UIPickerView!
+    //@IBOutlet weak var notesTextField: UITextField!
+    @IBOutlet weak var detailDescriptionLabel: UITextView!
     
     required init?(coder aDecoder: NSCoder) {
         print("init ItemDetailsViewController")
@@ -63,12 +60,11 @@ class ItemDetailsViewController: UITableViewController, UIPickerViewDataSource, 
         return moodArray[row]
     }
     
-    //Unwind segue
-    @IBAction func unwindWithSelectedCategory(segue:UIStoryboardSegue) {
-        if let categoryPickerViewController = segue.sourceViewController as? CategoryPickerViewController,
-            selectedCategory = categoryPickerViewController.selectedCategory {
-                category = selectedCategory
-        }
+
+    
+    @IBAction func didTouchDone(sender: AnyObject) {
     }
     
+    @IBAction func didTouchCancel(sender: AnyObject) {
+    }
 }

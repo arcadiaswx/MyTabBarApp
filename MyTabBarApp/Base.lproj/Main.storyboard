@@ -399,17 +399,20 @@
                     <navigationItem key="navigationItem" title="Add Item" id="gz7-I1-xgo">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HN3-b2-RMO">
                             <connections>
+                                <action selector="didTouchCancel:" destination="cwu-lG-Rgu" id="IIv-2i-C2P"/>
                                 <segue destination="UcC-JK-19M" kind="unwind" unwindAction="cancelToItemsViewController:" id="cFE-gR-wvh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="6Bg-vf-TBZ">
                             <connections>
+                                <action selector="didTouchDone:" destination="cwu-lG-Rgu" id="jec-EC-AXg"/>
                                 <segue destination="UcC-JK-19M" kind="unwind" identifier="SaveItemDetail" unwindAction="saveItemDetail:" id="ifK-3z-sQa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="notesTextField" destination="W9Q-de-Weg" id="sT0-9Y-aXA"/>
+                        <outlet property="categoryPicker" destination="snO-CX-QLO" id="K9v-oe-stC"/>
+                        <outlet property="notesTextField" destination="W9Q-de-Weg" id="X2p-IO-gBx"/>
                         <outlet property="titleTextField" destination="n7y-mV-nKr" id="GbA-nN-cu1"/>
                     </connections>
                 </tableViewController>
