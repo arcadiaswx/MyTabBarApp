@@ -12,14 +12,14 @@ class ItemCell: UITableViewCell {
     
     @IBOutlet weak var itemTitleLabel: UILabel!
     @IBOutlet weak var itemCategoryLabel: UILabel!
-    @IBOutlet weak var itemNotesLabel: UILabel!
+    @IBOutlet weak var itemNoteLabel: UILabel!
     //@IBOutlet weak var itemImageView: UIImageView!
     
     var item: Item! {
         didSet {
             itemTitleLabel.text = item.title
             itemCategoryLabel.text = item.category
-            itemNotesLabel.text = item.notes
+            itemNoteLabel.text = item.note
             //itemImageView.image = imageForItem(item.iconName)
         }
     }

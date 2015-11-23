@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F8A064295631EC9750A37C6 /* libPods-MyTabBarApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4ABAF8EB138CE1871A590A /* libPods-MyTabBarApp.a */; };
+		A62A2F861C0009AC00314794 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A2F851C0009AC00314794 /* DetailViewController.swift */; };
+		A661E96B1C036CFD00062AA0 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A661E96A1C036CFD00062AA0 /* SampleTableViewController.swift */; };
+		A699DC7B1C03A91200C0BACD /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC7A1C03A91200C0BACD /* ItemListViewController.swift */; };
+		A699DC7D1C03A93500C0BACD /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC7C1C03A93500C0BACD /* ItemDetailViewController.swift */; };
+		A699DC811C03C46C00C0BACD /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC7E1C03C46C00C0BACD /* PlayersViewController.swift */; };
+		A699DC821C03C46C00C0BACD /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC7F1C03C46C00C0BACD /* PlayerCell.swift */; };
+		A699DC831C03C46C00C0BACD /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC801C03C46C00C0BACD /* PlayerDetailsViewController.swift */; };
+		A699DC861C03C48400C0BACD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699DC851C03C48400C0BACD /* Player.swift */; };
 		A6C4304B1BFA25C80047E5DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430491BFA25C80047E5DB /* LoginViewController.swift */; };
 		A6C4304C1BFA25C80047E5DB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4304A1BFA25C80047E5DB /* SignUpViewController.swift */; };
 		A6C4304E1BFA273D0047E5DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A6C4304D1BFA273D0047E5DB /* Podfile */; };
@@ -17,9 +25,8 @@
 		A6C430571BFA3E7E0047E5DB /* AppIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430561BFA3E7E0047E5DB /* AppIntroViewController.swift */; };
 		A6C430591BFB8E7D0047E5DB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430581BFB8E7D0047E5DB /* ItemCell.swift */; };
 		A6C4305B1BFB8ED50047E5DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305A1BFB8ED50047E5DB /* Item.swift */; };
-		A6C4305E1BFB9C520047E5DB /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */; };
 		A6C430601BFB9E5A0047E5DB /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */; };
-		A6C430621BFBA0890047E5DB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430611BFBA0890047E5DB /* ItemsViewController.swift */; };
+		A6C430621BFBA0890047E5DB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430611BFBA0890047E5DB /* MasterViewController.swift */; };
 		A6C430641BFBA15B0047E5DB /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C430631BFBA15B0047E5DB /* SampleData.swift */; };
 		A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A51BF9739E00733741 /* AppDelegate.swift */; };
 		A6D9C5A81BF9739E00733741 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D9C5A71BF9739E00733741 /* MoreViewController.swift */; };
@@ -54,6 +61,14 @@
 		3A4ABAF8EB138CE1871A590A /* libPods-MyTabBarApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTabBarApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406C4755F851F3B8A28A9A51 /* Pods-MyTabBarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTabBarApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTabBarApp/Pods-MyTabBarApp.release.xcconfig"; sourceTree = "<group>"; };
 		5852D0919F9DD5B38FE76564 /* Pods-MyTabBarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTabBarApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTabBarApp/Pods-MyTabBarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A62A2F851C0009AC00314794 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A661E96A1C036CFD00062AA0 /* SampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		A699DC7A1C03A91200C0BACD /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		A699DC7C1C03A93500C0BACD /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		A699DC7E1C03C46C00C0BACD /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		A699DC7F1C03C46C00C0BACD /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		A699DC801C03C46C00C0BACD /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		A699DC851C03C48400C0BACD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A6C430491BFA25C80047E5DB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6C4304A1BFA25C80047E5DB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A6C4304D1BFA273D0047E5DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -64,9 +79,8 @@
 		A6C430561BFA3E7E0047E5DB /* AppIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntroViewController.swift; sourceTree = "<group>"; };
 		A6C430581BFB8E7D0047E5DB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		A6C4305A1BFB8ED50047E5DB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
-		A6C430611BFBA0890047E5DB /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		A6C430611BFBA0890047E5DB /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		A6C430631BFBA15B0047E5DB /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A6D9C5A21BF9739E00733741 /* MyTabBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTabBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D9C5A51BF9739E00733741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +134,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A699DC841C03C47300C0BACD /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A699DC7E1C03C46C00C0BACD /* PlayersViewController.swift */,
+				A699DC7F1C03C46C00C0BACD /* PlayerCell.swift */,
+				A699DC801C03C46C00C0BACD /* PlayerDetailsViewController.swift */,
+				A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		A699DC871C03C50E00C0BACD /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A6C430611BFBA0890047E5DB /* MasterViewController.swift */,
+				A62A2F851C0009AC00314794 /* DetailViewController.swift */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		A6B825F81BFE2A2E00D9EFAF /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				A699DC7A1C03A91200C0BACD /* ItemListViewController.swift */,
+				A699DC7C1C03A93500C0BACD /* ItemDetailViewController.swift */,
+				A661E96A1C036CFD00062AA0 /* SampleTableViewController.swift */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
 		A6C4305C1BFB8EDA0047E5DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A699DC851C03C48400C0BACD /* Player.swift */,
 				A6C4305A1BFB8ED50047E5DB /* Item.swift */,
 				A6C430631BFBA15B0047E5DB /* SampleData.swift */,
 			);
@@ -173,9 +218,9 @@
 				A6D9C5B01BF9739E00733741 /* LaunchScreen.storyboard */,
 				A6D9C5B31BF9739E00733741 /* Info.plist */,
 				A6C4304F1BFA29270047E5DB /* MyTabBarApp-Bridging-Header.h */,
-				A6C430611BFBA0890047E5DB /* ItemsViewController.swift */,
-				A6C4305D1BFB9C520047E5DB /* ItemDetailsViewController.swift */,
-				A6C4305F1BFB9E5A0047E5DB /* CategoryPickerViewController.swift */,
+				A699DC841C03C47300C0BACD /* Player */,
+				A699DC871C03C50E00C0BACD /* Example */,
+				A6B825F81BFE2A2E00D9EFAF /* Item */,
 			);
 			path = MyTabBarApp;
 			sourceTree = "<group>";
@@ -396,16 +441,23 @@
 				A6C430531BFA2A7B0047E5DB /* WelcomeViewController.swift in Sources */,
 				A6C4304C1BFA25C80047E5DB /* SignUpViewController.swift in Sources */,
 				A6C430591BFB8E7D0047E5DB /* ItemCell.swift in Sources */,
+				A699DC861C03C48400C0BACD /* Player.swift in Sources */,
 				A6C4305B1BFB8ED50047E5DB /* Item.swift in Sources */,
 				A6D9C5AA1BF9739E00733741 /* SecondViewController.swift in Sources */,
 				A6C430551BFA35920047E5DB /* TabBarViewController.swift in Sources */,
 				A6C430641BFBA15B0047E5DB /* SampleData.swift in Sources */,
 				A6D9C5A61BF9739E00733741 /* AppDelegate.swift in Sources */,
+				A699DC821C03C46C00C0BACD /* PlayerCell.swift in Sources */,
 				A6D9C5D61BF9740600733741 /* ViewController.swift in Sources */,
-				A6C4305E1BFB9C520047E5DB /* ItemDetailsViewController.swift in Sources */,
-				A6C430621BFBA0890047E5DB /* ItemsViewController.swift in Sources */,
+				A6C430621BFBA0890047E5DB /* MasterViewController.swift in Sources */,
+				A699DC7B1C03A91200C0BACD /* ItemListViewController.swift in Sources */,
 				A6C430571BFA3E7E0047E5DB /* AppIntroViewController.swift in Sources */,
+				A699DC831C03C46C00C0BACD /* PlayerDetailsViewController.swift in Sources */,
+				A699DC811C03C46C00C0BACD /* PlayersViewController.swift in Sources */,
+				A62A2F861C0009AC00314794 /* DetailViewController.swift in Sources */,
 				A6D9C5D81BF9768600733741 /* ListViewController.swift in Sources */,
+				A699DC7D1C03A93500C0BACD /* ItemDetailViewController.swift in Sources */,
+				A661E96B1C036CFD00062AA0 /* SampleTableViewController.swift in Sources */,
 				A6C430601BFB9E5A0047E5DB /* CategoryPickerViewController.swift in Sources */,
 				A6D9C5A81BF9739E00733741 /* MoreViewController.swift in Sources */,
 			);

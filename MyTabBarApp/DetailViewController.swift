@@ -1,22 +1,16 @@
 //
-//  ItemDetailsViewController.swift
+//  DetailItemViewController.swift
 //  MyTabBarApp
 //
-//  Created by teklabsco on 11/17/15.
+//  Created by teklabsco on 11/20/15.
 //  Copyright © 2015 Teklabs, LLC. All rights reserved.
 //
 
+
 import UIKit
 
-class ItemDetailsViewController: UIViewController,UITextViewDelegate {
+class DetailViewController: UIViewController,UITextViewDelegate {
     
-    //var item:Item?
-    //let moodArray = [  "Health", "Job", "Wisdom", "Faith", "Family", "Natural Disaster"]
-
-    
-    //@IBOutlet weak var titleTextField: UITextField!
-    //@IBOutlet weak var categoryPicker: UIPickerView!
-    //@IBOutlet weak var notesTextField: UITextField!
     @IBOutlet weak var detailDescriptionLabel: UITextView!
     
     
@@ -34,7 +28,7 @@ class ItemDetailsViewController: UIViewController,UITextViewDelegate {
         }
         if let label = self.detailDescriptionLabel {
             label.text = itemObjects[currentIndex]
-            if label.text == BLANK_ITEM_NOTE {
+            if label.text == BLANK_NOTE_TITLE {
                 label.text = ""
             }
         }
@@ -44,7 +38,7 @@ class ItemDetailsViewController: UIViewController,UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        itemDetailsViewController = self
+        detailViewController = self
         detailDescriptionLabel.becomeFirstResponder()
         detailDescriptionLabel.delegate = self
         self.configureView()
@@ -62,14 +56,14 @@ class ItemDetailsViewController: UIViewController,UITextViewDelegate {
         }
         itemObjects[currentIndex] = detailDescriptionLabel.text
         if detailDescriptionLabel.text == "" {
-            itemObjects[currentIndex] = BLANK_ITEM_NOTE
+            itemObjects[currentIndex] = BLANK_NOTE_TITLE
         }
         saveAndUpdate()
     }
     
     func saveAndUpdate() {
-        masterItemView?.save()
-        masterItemView?.tableView.reloadData()
+        masterView?.save()
+        masterView?.tableView.reloadData()
     }
     
     func textViewDidChange(textView: UITextView) {
