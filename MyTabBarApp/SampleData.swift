@@ -16,6 +16,6 @@ let itemsData = [
 
 
 let playersData = [
-    Player(name:"Bill Evans", category:"Tic-Tac-Toe", rating: 4),
-    Player(name: "Oscar Peterson", category: "Spin the Bottle", rating: 5),
-    Player(name: "Dave Brubeck", category: "Texas Hold 'em Poker", rating: 2) ]
+    Player(name:"Bill Evans", category:"Faith", rating: 4),
+    Player(name: "Oscar Peterson", category: "Healing", rating: 5),
+    Player(name: "Dave Brubeck", category: "Peace", rating: 2) ]
